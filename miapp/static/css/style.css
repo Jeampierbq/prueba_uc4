@@ -1,60 +1,131 @@
 /* style.css */
 
-/* Establece un color de fondo */
+/* Establece un fondo con degradado */
 body {
-    background-color: #f0f0f0; /* Cambia #f0f0f0 por el color que desees */
+    background: linear-gradient(135deg, #1d1d1d, #4b006e, #003f5e);
+    background-size: cover;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* Ajusta el estilo del encabezado */
+/* Estilo del encabezado */
 .topbar {
-    background-color: #333; /* Color de fondo para la barra superior */
-    color: #fff; /* Color de texto para la barra superior */
-    padding: 10px; /* Ajuste de espaciado interno */
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Estilo para los enlaces en la barra superior */
 .topbar-inner__signin {
-    color: #fff; /* Color del texto del enlace */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    margin-right: 10px; /* Ajuste del margen derecho entre enlaces */
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #4b006e, #003f5e);
+    border-radius: 10px;
+}
+
+.topbar-inner__signin:hover {
+    color: #ddd;
+    background: linear-gradient(135deg, #003f5e, #4b006e);
+}
+
+/* Estilo para el contenido principal */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #bbb;
+    margin-bottom: 1em;
+}
+
+p {
+    color: #bbb;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin-bottom: 2em;
+}
+
+/* Estilo para los botones */
+.button {
+    background-color: #5a4be7;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 10px;
+}
+
+.button:hover {
+    background-color: #4834d4;
 }
 
 /* Estilo para el pie de página */
 .footer {
-    background-color: #333; /* Color de fondo para el pie de página */
-    color: #fff; /* Color de texto para el pie de página */
-    padding: 20px; /* Ajuste de espaciado interno */
-    text-align: center; /* Alineación del texto al centro */
+    background-color: transparent;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Estilo para los enlaces en el pie de página */
 .footer a {
-    color: #fff; /* Color del texto del enlace */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    margin-right: 10px; /* Ajuste del margen derecho entre enlaces */
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #fff;
 }
 
 /* Estilo para el botón de ayuda */
 .help-button {
-    background-color: #4CAF50; /* Color de fondo para el botón */
-    color: #fff; /* Color de texto para el botón */
-    padding: 10px 20px; /* Ajuste de espaciado interno */
-    border-radius: 5px; /* Borde redondeado */
-    text-decoration: none; /* Quita el subrayado del enlace */
-    display: inline-block; /* Muestra el botón como un elemento en línea */
-    margin-top: 20px; /* Ajuste del margen superior */
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.help-button:hover {
+    background-color: #388E3C;
 }
 
 /* Estilo para el logo en el botón de ayuda */
 .topbar-inner__logo {
-    fill: #fff; /* Color de relleno para el logo SVG */
-    width: 24px; /* Ancho del logo */
-    height: 24px; /* Altura del logo */
-    vertical-align: middle; /* Alineación vertical */
-    margin-right: 10px; /* Ajuste del margen derecho */
+    display: inline-block;
+    vertical-align: middle;
 }
 
-/* Estilo para el texto en el botón de ayuda */
-.help-button__text {
-    vertical-align: middle; /* Alineación vertical */
+.topbar-inner__logo img.logo {
+    width: 80px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+    display: block;
 }

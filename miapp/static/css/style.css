@@ -1,0 +1,60 @@
+/* style.css */
+
+/* Establece un color de fondo */
+body {
+    background-color: #f0f0f0; /* Cambia #f0f0f0 por el color que desees */
+}
+
+/* Ajusta el estilo del encabezado */
+.topbar {
+    background-color: #333; /* Color de fondo para la barra superior */
+    color: #fff; /* Color de texto para la barra superior */
+    padding: 10px; /* Ajuste de espaciado interno */
+}
+
+/* Estilo para los enlaces en la barra superior */
+.topbar-inner__signin {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    margin-right: 10px; /* Ajuste del margen derecho entre enlaces */
+}
+
+/* Estilo para el pie de página */
+.footer {
+    background-color: #333; /* Color de fondo para el pie de página */
+    color: #fff; /* Color de texto para el pie de página */
+    padding: 20px; /* Ajuste de espaciado interno */
+    text-align: center; /* Alineación del texto al centro */
+}
+
+/* Estilo para los enlaces en el pie de página */
+.footer a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    margin-right: 10px; /* Ajuste del margen derecho entre enlaces */
+}
+
+/* Estilo para el botón de ayuda */
+.help-button {
+    background-color: #4CAF50; /* Color de fondo para el botón */
+    color: #fff; /* Color de texto para el botón */
+    padding: 10px 20px; /* Ajuste de espaciado interno */
+    border-radius: 5px; /* Borde redondeado */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    display: inline-block; /* Muestra el botón como un elemento en línea */
+    margin-top: 20px; /* Ajuste del margen superior */
+}
+
+/* Estilo para el logo en el botón de ayuda */
+.topbar-inner__logo {
+    fill: #fff; /* Color de relleno para el logo SVG */
+    width: 24px; /* Ancho del logo */
+    height: 24px; /* Altura del logo */
+    vertical-align: middle; /* Alineación vertical */
+    margin-right: 10px; /* Ajuste del margen derecho */
+}
+
+/* Estilo para el texto en el botón de ayuda */
+.help-button__text {
+    vertical-align: middle; /* Alineación vertical */
+}
